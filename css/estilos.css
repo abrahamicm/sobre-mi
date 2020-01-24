@@ -1,0 +1,492 @@
+body{ 
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+.contenedor{
+    max-width: 1280px;
+    margin: auto;
+}
+header .contenedor{
+    display: flex;
+    justify-content: space-between;
+}
+
+header .lista-menu{
+    display: flex;
+}
+
+header .lista-menu li{
+    list-style: none;
+    margin-right: 15px;
+}
+
+header .lista-menu li a {
+    text-decoration: none;
+}
+
+header  {
+    background-image:linear-gradient(rgba(84,93,220, .9),rgba(96,171,245,.9)) , url(../imagenes/fondo.jpg);
+    height: 100vh;
+    background-size: cover;
+}
+#contenedor-titulo-flex{
+    display: flex;
+    justify-content: center;
+    margin: 18vh 0;
+    max-width: 1580px; 
+    width: 100%;
+}
+
+h1{
+    font-size: 60px;
+    color: #fff;
+
+}
+
+h2{
+    font-size: 25px;
+    color: #fff;
+    text-align: center;
+    
+}
+
+.contenedor-titulo a, #sobre-mi a,  #blog a ,  #que-esperas a , #contacto input[type="submit"] {
+    font-size: 14px;
+    color: #fff;
+    background: #5cb8ff;
+    padding: 14px 24px;
+    width: 128px;
+    display: inline-block;
+    text-decoration: none;
+}
+
+p.logo{
+    color: #fff;
+    font-size: 20px;
+}
+
+nav ul li a {
+    color: white;
+}
+/* SECCION DE SOBRE MI*/
+
+h3 {
+    text-align: center;
+    font-weight: normal;
+    font-size: 55px;
+}
+#sobre-mi .contenedor-sobremi{
+    display: flex;
+    justify-content: space-around;
+    
+}
+#sobre-mi .texto{
+    width: 42%;
+}
+
+/* seccion servicios*/
+.contenedor-servicios{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.servicio{
+    width: 24%;
+    padding: 34px 30px 38px 30px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+    position: relative;
+}
+.ondas{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.servicio h4{
+    font-size: 30px;
+    margin: 0;
+}
+.servicio p {
+    margin-bottom: 20px;
+    height: 194px;
+}
+
+.contenedor-servicios .violeta {
+    background-image: linear-gradient(to top, #5055df , #6d68f3);
+    box-shadow: 0 12px 30px 0 rgba(80,85,223, .37);
+}
+
+.contenedor-servicios .celeste {
+    background-image: linear-gradient(to top, #40a8f9 , #5cb8ff);
+    box-shadow: 0 12px 30px 0 rgba(86, 163, 222, .3);
+}
+.icono{
+    float: right;
+}
+/* seccion mis trabajos */
+button.owl-prev, button.owl-next {
+    font-size: 40px !important;
+}
+
+span {
+    color: #71bcfa;
+}
+
+#mis-trabajos p {
+    text-align: center;
+    color: #000
+}
+
+
+/* porque trabajar conmigo */
+.contenedor-trabajar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#por-que-trabajar .item {
+    width: 28%;
+    text-align: center;
+}
+
+#por-que-trabajar ul li {
+    list-style: none;
+}
+
+/* para dar stillo al titulo debajo de la imagen */
+#por-que-trabajar ul li:nth-child(2) {
+    font-weight: bold;
+    font-size: 19px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+/* para estirar el parrafo */
+#por-que-trabajar ul li:nth-child(3) {
+    line-height: 31px;
+}
+
+/* seccion block */
+#blog .contenedor-publicaciones {
+    display: flex;
+    justify-content: space-around;
+}
+
+#blog .publicacion {
+    width: 30%;
+    /* sombra  se ve mejor la tarjeta*/
+    box-shadow: 1px 1px 14px #ccc;
+}
+
+#blog img {
+    width:100%
+}
+/* fondo de la tarjeta de los articulos*/
+#blog .contenido {
+    background: #fff;
+    padding: 20px;
+  }
+  /* fondo para que haga contraste con lo de abajo*/
+  #blog {
+    background: #F9FAFC;
+  }
+  /* trabajar el titulo */
+  #blog h4 {
+    font-size: 23px;
+    /* le saco el margin top que tenia por defecto*/
+    margin: 0;
+    margin-bottom: 15px;
+  }
+/* cambiar el color del parrafo estirar el texto y cambiar tamaño de fuente*/
+  #blog p {
+    color: #5A6169;
+    line-height: 24px;
+    font-size: 16px;
+  }
+
+  /* arriba le pusimos el estilo de boton de los demas pero como es muy ancho para este boton aqui le aplicamos en ancho solo para este boton*/
+  #blog a {
+    width: 87px;
+  }
+
+  
+#que-esperas {
+    /* 1 degradado */
+    background: linear-gradient(rgba(84,93,220,.94), rgba(96,171,245,.9));
+    /* 2 centrar texto */
+    text-align: center;
+    /* 3 paddin arriba y abajo y cero de los lados*/
+    padding: 50px 0;
+    /* 4 margen superior para separar de las publicaciones, las tarjetas*/
+    margin-top: 40px;
+  }
+  /* formatear el texto de la pregunta */
+  /* tambien se le colocal el estilo de los botones al boton siguiente #que-esperas a*/
+  #que-esperas h3 {
+    font-size: 23px;
+    color: #fff;
+  }
+  
+
+  /* SECCION CONTACTO */
+
+#contacto form {
+    /*1 colocar uno al lado del otro*/
+    display: flex;
+    /*2 espaciarlo entre ellos*/
+    justify-content: space-between;
+    /*3 si se desvorda que vaya hacia abajo puede fluir en varias lineas*/
+    flex-wrap: wrap;
+    /* achicar el formulario*/
+    width: 77%;
+    margin: auto;
+  }
+  
+  input[type="text"], input[type="email"] {
+    /*4 darle una medida para que funcione con el wrap*/
+    width: 49%;
+    /*5 darle estilo al boton*/
+    margin-bottom: 15px;
+    padding: 18px 0;
+    /* 6 formatear el borde*/
+    border: 0;
+    /* 7 dar estilo al borde azulito el piso*/
+    border-bottom: 1px solid #5cb8ff;
+    /* 8 aumentar el tamaño de la letra*/
+    font-size: 17px;
+  }
+  
+  textarea {
+    padding: 18px 0;
+    border: 0;
+    border-bottom: 1px solid #5cb8ff;
+    font-size: 17px;
+    margin-bottom: 40px;
+    /* que tome todo el ancho, los demas ocupan el 49 %*/
+    width: 100%;
+  }
+
+  /*  darle forma al submit de boton #contacto input[type="submit"]*/
+  
+  #contacto input[type="submit"] {
+    /* colocarle un ancho personalizado al boton sutmit*/
+    width: 166px;
+    /* centrar*/
+    margin: auto;
+  }
+  /* esto es lo del whatapp y del celular */
+  .contacto-info {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 60px;
+  }
+  /* formatear las imagenes del whatsapp y del correo */
+  .contacto-info img {
+    width: 28px;
+    /* aliniar la imagen con el texto, que queden en linea*/
+    vertical-align: middle;
+    margin-right: 10px;
+  }
+
+  footer {
+      /*color */
+  background: #2F2F2F;
+  /*relleno arriba y abajo*/
+  padding: 40px 0;
+  text-align: center;
+  /* separar de la imagen del coreo y del la del whatsapp*/
+  margin-top: 40px;
+}
+
+footer .contenedor {
+  display: flex;
+  /*alinear todo al centro*/
+  justify-content: center;
+  flex-direction: column;
+}
+
+footer img {
+    /* separar las imagenes de los iconos del footer 0 arriba y abajo y 40 de los lados*/
+  margin: 0 40px;
+  /* condicion inicial para rotar */
+  transform: rotate(0);
+  /* sin esto no va a funcionar */
+  transition: 0.4s;
+}
+
+footer img:hover {
+  transform: rotate(360deg);
+  /* no se porque el le pone en los dos */
+  /* transition: 0.4s; */
+}
+
+footer p {
+  color: #fff;
+  margin-top: 40px;
+}
+
+#whatsapp {
+  position: fixed;
+  top: 80%;
+  right: 1%;
+  z-index: 1;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+#mis-trabajos, #sobre-mi, #por-que-trabajar, #blog, #contacto {
+    /* esto es para que cuando se haga el scroll se vea el titulo*/
+  padding: 90px 0;
+}
+
+#servicios {
+  padding: 70px 0;
+}
+/* esta es la imagen con el menu de hamburguesa*/
+.menu-icon {
+  display: none;
+}
+
+/* empieza la parte responsiva*/
+
+@media (max-width: 800px) {
+
+.menu-icon {
+  display: block;
+float: right;
+width: 40px;
+height: 35px;
+margin-top: 15px;
+}
+
+header nav {
+  position: absolute;
+  top: 83px;
+  left: 0;
+  /* con el altor normal se corta por eso se le asigna un alto*/
+  height: 268px;
+  background: #5cb8ff;
+  width: 100%;
+  /* aqui oculta la lista de enlaces de navegacion*/
+  display: none;
+}
+
+header nav ul {
+    /* esto es para cuando le demos click a la hamburguesa se muestren los enlaces uno debajo del otro*/
+  flex-direction: column;
+}
+
+header nav ul li {
+  margin-bottom: 15px;
+}
+
+h1 {
+    /* bajarle el tamaño del titulo era 60*/
+  font-size: 44px;
+}
+
+h2 {
+    /* aqui tambien*/
+  font-size: 19px;
+}
+
+#sobre-mi .contenedor-sobremi {
+    /* quitar las dos columna y poner la imagen de la lapto y los textos uno del atro del otro */
+    flex-direction: column;
+}
+
+#sobre-mi img {
+    /* para que no se corte la imagen*/
+  width: 100%;
+}
+
+#sobre-mi .texto {
+    /* estaba en 42% aqui le subimos */
+    width: 100%;
+}
+
+.contenedor-servicios {
+    flex-direction: column;
+}
+
+.servicio {
+    /*le reducimos el paddin para que quepa*/
+  width: 82%;
+  padding: 34px 30px 69px 30px;
+}
+
+.icono {
+    /*bajar un poco los iconos*/
+    margin-top: 23px;
+}
+
+h3 {
+    /*achicar los h3*/
+  font-size: 43px;
+}
+
+.contenedor-trabajar {
+    flex-direction: column;
+}
+
+#por-que-trabajar .item {
+    /*esto tenia 28% porque estaba dividido en 3 ahora le damos el 100%*/
+    width: 100%;
+}
+
+.item ul {
+    /*formatear el paddin por defecto*/
+    padding: 0;
+}
+
+#blog .contenedor-publicaciones {
+    flex-direction: column;
+}
+
+#blog .publicacion {
+    /* tenia 30%*/
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+#contacto form {
+    width: 100%;
+    flex-direction: column;
+}
+
+input[type="text"], input[type="email"] {
+    width: 100%;
+}
+
+footer img {
+    margin: 0 24px;
+}
+
+}
+/*para tablets*/
+@media (min-width: 600px) and (max-width:800px) {
+  header {
+    height: 70vh;
+  }
+
+  .servicio {
+      /*estas son los bloques con las ondas, ponerlas mas pequeñas y centrarlas*/
+    width: 57%;
+    padding: 34px 30px 69px 30px;
+    margin: auto;
+    margin-bottom: 45px;
+}
+
+#blog .publicacion {
+    /*estos son los card las tarjetas*/
+    width: 71%;
+    margin: auto;
+    margin-bottom: 40px;
+}
+
+}
